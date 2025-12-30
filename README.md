@@ -1,15 +1,11 @@
-# DevOps Capstone Template
+# DevOps Capstone Project
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python 3.9](https://img.shields.io/badge/Python-3.9-green.svg)](https://shields.io/)
 
-This repository contains the starter code for the project in [**IBM-CD0285EN-SkillsNetwork DevOps Capstone Project**](https://www.coursera.org/learn/devops-capstone-project?specialization=devops-and-software-engineering) which is part of the [**IBM DevOps and Software Engineering Professional Certificate**](https://www.coursera.org/professional-certificates/devops-and-software-engineering)
+This project implements an **Account microservice** for a mock e-commerce platform. The service is responsible for managing customer account data and exposing a **RESTful API** that can be consumed by other microservices within the system. The service is built using **Python** and **Flask** and follows standard REST design principles. 
 
-## Usage
-
-You should use this template to start your DevOps Capstone project. It contains all of the code that you will need to get started.
-
-Do Not fork this code! It is meant to be used by pressing the  <span style=color:white;background:green>**Use this Template**</span> button in GitHub. This will copy the code to your own repository with no connection back to the original repository like a fork would. This is what you want.
+A database model and an initial API endpoint for creating customer accounts were already implemented. This project extends the service by adding REST API endpoints to **READ, UPDATE, DELETE, and LIST** customer accounts while following best practices.
 
 ## Development Environment
 
@@ -90,7 +86,7 @@ The Account model contains the following fields:
 | phone_number | String(32) | True |
 | date_joined | Date | False |
 
-## Your Task
+## Project Objective
 
 Complete this microservice by implementing REST API's for `READ`, `UPDATE`, `DELETE`, and `LIST` while maintaining **95%** code coverage. In true **Test Driven Development** fashion, first write tests for the code you "wish you had", and then write the code to make them pass.
 
@@ -122,9 +118,17 @@ Please only use these commands for working stand-alone on your own computer with
 
 You can now perform Tekton development locally, just like in the Cloud IDE lab environment.
 
-## Author
+## Maintainer
+
+**Qirong Wu**, Software Developer.
+
+## Attribution
+
+This project is based on starter code provided by IBM as part of the **IBM DevOps and Software Engineering Professional Certificate**. The original template was authored by:
 
 [John Rofrano](https://www.coursera.org/instructor/johnrofrano), Senior Technical Staff Member, DevOps Champion, @ IBM Research, and Instructor @ Coursera
+
+Modifications and extensions to implement full CRUD functionality were completed as part of the project.
 
 ## License
 
