@@ -131,7 +131,7 @@ class TestAccountService(TestCase):
         """It should read an account"""
         account = self._create_accounts(1)[0]
         response = self.client.get(
-            f"{BASE_URL}/{account.id}", 
+            f"{BASE_URL}/{account.id}",
             content_type="application/json"
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -152,11 +152,11 @@ class TestAccountService(TestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         data = response.get_json()
         self.assertEqual(len(data), 5)
-    
+
         # Update an account test case
     def test_update_account(self):
         """It should update an existing account"""
-        # create an account 
+        # create an account
         test_account = AccountFactory()
         response = self.client.post(BASE_URL, json=test_account.serialize())
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
@@ -193,7 +193,7 @@ class TestAccountService(TestCase):
         """Should not allow an illegal method call"""
         response = self.client.delete(BASE_URL)
         self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
-    
+
     # HTTPS test
     def test_security_headers(self):
         """It should return security headers"""
